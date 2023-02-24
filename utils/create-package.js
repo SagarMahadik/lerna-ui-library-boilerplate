@@ -76,16 +76,25 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 
+const externalDependencies = [
+	"react",
+	"react-dom",
+	"styled-components",
+	"react/jsx-runtime",
+	"framer-motion",
+];
+
 export default {
 	input: "src/index.ts",
 	output: [
 		{
 			dir: "dist",
 			entryFileNames: "[name].js",
-			format: "cjs",
+			format: "esm",
 			exports: "named",
 		},
 	],
+	external: externalDependencies,
 	plugins: [
 		peerDepsExternal(),
 		resolve(),
@@ -96,7 +105,7 @@ export default {
 		}),
 		terser(),
 	],
-	external: Object.keys(pkg.dependencies || {}),
+	
 };`,
 	},
 ];
