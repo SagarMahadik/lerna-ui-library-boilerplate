@@ -12,7 +12,10 @@
 		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
 		"test": "jest"
 	},
-		"publishConfig": {
+	"peerDependencies": {
+		"styled-components": "workspace:*"
+	},
+	"publishConfig": {
 		"access": "public"
 	}
 }
