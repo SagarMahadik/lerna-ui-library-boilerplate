@@ -30,8 +30,8 @@ const files = [
 		content: `{
 	"name": "@bennytestui1/${packageName}",
 	"version": "0.0.0",
-	"main": "dist/index.cjs.js",
-	"module": "dist/index.esm.js",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
 	"type": "module",
 	"files": [
 		"dist"

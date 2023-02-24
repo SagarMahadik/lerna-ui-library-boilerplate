@@ -22,3 +22,11 @@ export const ButtonText = styled.h1`
 	font-family: "Roboto", sans-serif;
 	font-style: italic;
 `;
+
+export const ButtonIcon = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+`;

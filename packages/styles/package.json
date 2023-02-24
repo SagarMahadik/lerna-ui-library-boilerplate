@@ -1,8 +1,8 @@
 {
 	"name": "@bennytestui1/styles",
 	"version": "0.0.2",
-	"main": "dist/index.cjs.js",
-	"module": "dist/index.esm.js",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
 	"type": "module",
 	"files": [
 		"dist"
