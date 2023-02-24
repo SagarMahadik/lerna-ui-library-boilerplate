@@ -14,3 +14,11 @@ export const Button = styled.div`
 	width: 100px;
 	height: 200px;
 `;
+
+export const ButtonText = styled.h1`
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-style: italic;
+`;
