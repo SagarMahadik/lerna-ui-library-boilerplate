@@ -1,6 +1,6 @@
 {
 	"name": "@bennytestui1/constants",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
 	"type": "module",
@@ -12,7 +12,7 @@
 		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
 		"test": "jest"
 	},
-		"publishConfig": {
+	"publishConfig": {
 		"access": "public"
 	}
 }
