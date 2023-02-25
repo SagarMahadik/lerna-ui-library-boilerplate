@@ -10,6 +10,8 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
+		"prepublish": "node ../../scripts/update-peer-dependencies.js",
+		"postpublish": "node ../../scripts/revert-peer-dependencies.js",
 		"test": "jest"
 	},
 	"peerDependencies": {
