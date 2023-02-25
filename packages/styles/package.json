@@ -1,23 +1,24 @@
 {
-	"name": "@bennytestui1/styles",
-	"version": "0.0.4",
-	"main": "dist/index.js",
-	"module": "dist/index.js",
-	"type": "module",
-	"files": [
-		"dist"
-	],
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
-		"prepublish": "node ../../scripts/update-peer-dependencies.js",
-		"postpublish": "node ../../scripts/revert-peer-dependencies.js",
-		"test": "jest"
-	},
-	"peerDependencies": {
-		"styled-components": "^5.3.6"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@bennytestui1/styles",
+  "version": "0.0.4",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rollup --config --bundleConfigAsCjs",
+    "prepublish": "node ../../scripts/prePublish.js",
+    "postpublish": "node ../../scripts/postPublish.js $PWD",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "styled-components": "workspace:*",
+    "@bennytestui1/constants": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

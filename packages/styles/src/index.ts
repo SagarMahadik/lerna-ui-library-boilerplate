@@ -1,3 +1,4 @@
+import { br_circle, fs_regular, fw_800 } from "@bennytestui1/constants";
 import styled from "styled-components";
 
 interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -156,11 +157,11 @@ export const Button = styled.div<ButtonProps>`
 	align-items: center;
 	justify-content: center;
 	padding: 8px 16px;
-	border-radius: 4px;
 	background-color: #000;
+	border-radius: ${({ borderRadius }) => borderRadius || br_circle}};
 	color: #fff;
-	font-size: 16px;
-	font-weight: 500;
+	font-size: ${({ fontSize }) => fontSize || fs_regular};
+	font-weight: ${({ fontWeight }) => fontWeight || fw_800};
 	cursor: pointer;
 	width: 100px;
 	height: 200px;
