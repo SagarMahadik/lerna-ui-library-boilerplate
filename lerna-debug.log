@@ -1,9 +1,33 @@
-39 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
-39 error npm ERR! code EUNSUPPORTEDPROTOCOL
-39 error npm ERR! Unsupported URL Type "workspace:": workspace:*
+39 error Error: Command was killed with SIGABRT (Aborted): npm install --package-lock-only --ignore-scripts
 39 error
-39 error npm ERR! A complete log of this run can be found in:
-39 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_56_03_197Z-debug-0.log
+39 error <--- Last few GCs --->
+39 error
+39 error [54438:0x130008000]   215717 ms: Mark-sweep 4030.8 (4129.5) -> 4017.6 (4129.2) MB, 2879.5 / 0.0 ms  (average mu = 0.145, current mu = 0.013) task scavenge might not succeed
+39 error [54438:0x130008000]   218942 ms: Mark-sweep 4031.3 (4129.5) -> 4018.1 (4130.0) MB, 3161.9 / 0.0 ms  (average mu = 0.079, current mu = 0.019) task scavenge might not succeed
+39 error
+39 error
+39 error <--- JS stacktrace --->
+39 error
+39 error FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+39 error  1: 0x102df42dc node::Abort() [/usr/local/bin/node]
+39 error  2: 0x102df4464 node::errors::TryCatchScope::~TryCatchScope() [/usr/local/bin/node]
+39 error  3: 0x102f43bc0 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+39 error  4: 0x102f43b54 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+39 error  5: 0x1030c726c v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason) [/usr/local/bin/node]
+39 error  6: 0x1030ca87c v8::internal::Heap::CollectSharedGarbage(v8::internal::GarbageCollectionReason) [/usr/local/bin/node]
+39 error  7: 0x1030c7a34 v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/bin/node]
+39 error  8: 0x1030c535c v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
+39 error  9: 0x10313fd5c v8::internal::ScavengeJob::Task::RunInternal() [/usr/local/bin/node]
+39 error 10: 0x102e52084 node::PerIsolatePlatformData::RunForegroundTask(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >) [/usr/local/bin/node]
+39 error 11: 0x102e50d1c node::PerIsolatePlatformData::FlushForegroundTasksInternal() [/usr/local/bin/node]
+39 error 12: 0x103665f30 uv__async_io [/usr/local/bin/node]
+39 error 13: 0x103677ca8 uv__io_poll [/usr/local/bin/node]
+39 error 14: 0x1036663c0 uv_run [/usr/local/bin/node]
+39 error 15: 0x102d42ccc node::SpinEventLoop(node::Environment*) [/usr/local/bin/node]
+39 error 16: 0x102e2d6e0 node::NodeMainInstance::Run(int*, node::Environment*) [/usr/local/bin/node]
+39 error 17: 0x102e2d3ac node::NodeMainInstance::Run(node::EnvSerializeInfo const*) [/usr/local/bin/node]
+39 error 18: 0x102dc72e0 node::Start(int, char**) [/usr/local/bin/node]
+39 error 19: 0x183ce7e50 start [/usr/lib/dyld]
 39 error     at makeError (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
 39 error     at handlePromise (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/index.js:118:26)
 39 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
