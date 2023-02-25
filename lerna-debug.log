@@ -3,7 +3,7 @@
 39 error npm ERR! Unsupported URL Type "workspace:": workspace:*
 39 error
 39 error npm ERR! A complete log of this run can be found in:
-39 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_53_50_678Z-debug-0.log
+39 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_56_03_197Z-debug-0.log
 39 error     at makeError (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
 39 error     at handlePromise (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/index.js:118:26)
 39 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
