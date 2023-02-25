@@ -33,9 +33,7 @@ const updateDependency = (depName, updateTo) => {
 };
 
 Object.keys(packageJson.peerDependencies || {}).forEach((depName) => {
-	if (isInternalDependency(depName)) {
-		updateDependency(depName, constantsVersion);
-	} else {
+	if (!isInternalDependency(depName)) {
 		updateDependency(depName, monorepoPackageJson.devDependencies[depName]);
 	}
 });

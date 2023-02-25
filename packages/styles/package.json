@@ -1,6 +1,6 @@
 {
 	"name": "@bennytestui1/styles",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"type": "module",
@@ -10,13 +10,13 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
-		"prepublish": "node ../../scripts/prePublish.js",
+		"prepublishOnly": "node ../../scripts/prePublish.js",
 		"postpublish": "node ../../scripts/postPublish.js $PWD",
 		"test": "jest"
 	},
 	"peerDependencies": {
-		"@bennytestui1/constants": "^0.0.7",
-		"styled-components": "^5.3.6"
+		"@bennytestui1/constants": "^0.0.4",
+		"styled-components": "workspace:*"
 	},
 	"publishConfig": {
 		"access": "public"
