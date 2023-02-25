@@ -1,43 +1,10 @@
-0 silly argv { _: [ 'version' ], lernaVersion: '6.5.1', '$0': 'lerna' }
-1 notice cli v6.5.1
-2 verbose rootPath /Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library
-3 info current version 0.0.4
-4 silly isAnythingCommitted
-5 verbose isAnythingCommitted 1
-6 silly getCurrentBranch
-7 verbose currentBranch main
-8 silly remoteBranchExists
-9 silly isBehindUpstream
-10 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
-11 silly hasTags
-12 verbose hasTags true
-13 silly git-describe.sync "v0.0.4-1-g568dbef" => {"lastTagName":"v0.0.4","lastVersion":"v0.0.4","refCount":"1","sha":"568dbef","isDirty":false}
-14 info Looking for changed packages since v0.0.4
-15 silly checking diff packages/constants
-16 silly no diff found in @bennytestui1/constants
-17 silly checking diff packages/styles
-18 silly found diff in packages/styles/package.json
-18 silly found diff in packages/styles/src/index.ts
-19 verbose filtered diff [ 'packages/styles/package.json', 'packages/styles/src/index.ts' ]
-20 verbose updated @bennytestui1/styles
-21 verbose git-describe undefined => "v0.0.4-1-g568dbef"
-22 silly git-describe parsed => {"lastTagName":"v0.0.4","lastVersion":"v0.0.4","refCount":"1","sha":"568dbef","isDirty":false}
-23 info execute Skipping releases
-24 silly lifecycle No script for "preversion" in "my-ui-library", continuing
-25 silly lifecycle No script for "preversion" in "@bennytestui1/constants", continuing
-26 silly lifecycle No script for "preversion" in "@bennytestui1/styles", continuing
-27 verbose version @bennytestui1/constants has no lockfile. Skipping lockfile update.
-28 verbose version @bennytestui1/styles has no lockfile. Skipping lockfile update.
-29 silly lifecycle No script for "version" in "@bennytestui1/styles", continuing
-30 silly lifecycle No script for "version" in "@bennytestui1/constants", continuing
-31 verbose version Updating root package-lock.json
-32 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
-32 error npm ERR! code EUNSUPPORTEDPROTOCOL
-32 error npm ERR! Unsupported URL Type "workspace:": workspace:*
-32 error
-32 error npm ERR! A complete log of this run can be found in:
-32 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_27_34_086Z-debug-0.log
-32 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
-32 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
-32 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-32 error     at async Promise.all (index 0)
+39 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
+39 error npm ERR! code EUNSUPPORTEDPROTOCOL
+39 error npm ERR! Unsupported URL Type "workspace:": workspace:*
+39 error
+39 error npm ERR! A complete log of this run can be found in:
+39 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_30_10_544Z-debug-0.log
+39 error     at makeError (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
+39 error     at handlePromise (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/index.js:118:26)
+39 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+39 error     at async Promise.all (index 0)
