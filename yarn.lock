@@ -119,11 +119,11 @@
     to-fast-properties "^2.0.0"
 
 "@bennytestui1/constants@>=0.0.4", "@bennytestui1/constants@file:/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/packages/constants":
-  version "0.1.0"
+  version "0.1.1"
   resolved "file:packages/constants"
 
 "@bennytestui1/styles@file:/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/packages/styles":
-  version "0.1.0"
+  version "0.1.1"
   resolved "file:packages/styles"
 
 "@emotion/is-prop-valid@^0.8.2":
