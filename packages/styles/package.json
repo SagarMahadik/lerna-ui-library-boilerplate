@@ -1,6 +1,6 @@
 {
   "name": "@bennytestui1/styles",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "module",
@@ -15,8 +15,8 @@
     "test": "jest"
   },
   "peerDependencies": {
-    "styled-components": "workspace:*",
-    "@bennytestui1/constants": "workspace:*"
+    "@bennytestui1/constants": "workspace:*",
+    "styled-components": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
