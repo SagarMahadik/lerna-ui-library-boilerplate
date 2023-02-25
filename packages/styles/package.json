@@ -1,23 +1,22 @@
 {
-  "name": "@bennytestui1/styles",
-  "version": "0.0.12",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "node ../../scripts/prePublish.js && rimraf dist && rollup --config --bundleConfigAsCjs",
-    "postpublish": "node ../../scripts/postPublish.js $PWD",
-    "test": "jest"
-  },
-  "peerDependencies": {
-    "@bennytestui1/constants": "^0.0.4",
-    "styled-components": "^5.3.6"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@bennytestui1/styles",
+	"version": "0.0.12",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
+		"test": "jest"
+	},
+	"peerDependencies": {
+		"@bennytestui1/constants": "^0.0.4",
+		"styled-components": "^5.3.6"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
