@@ -1,6 +1,6 @@
 {
 	"name": "@bennytestui1/styles",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"type": "module",
@@ -10,7 +10,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
-		"prepublishOnly": "node ../../scripts/prePublish.js",
+		"prepare": "node ../../scripts/prePublish.js",
 		"postpublish": "node ../../scripts/postPublish.js $PWD",
 		"test": "jest"
 	},

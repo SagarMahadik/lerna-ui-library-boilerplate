@@ -1,22 +1,9 @@
 39 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
-39 error npm WARN ERESOLVE overriding peer dependency
-39 error npm WARN While resolving: @bennytestui1/styles@0.0.8
-39 error npm WARN Found: @bennytestui1/constants@undefined
-39 error npm WARN node_modules/@bennytestui1/constants
-39 error npm WARN   workspace packages/constants from the root project
-39 error npm WARN
-39 error npm WARN Could not resolve dependency:
-39 error npm WARN peer @bennytestui1/constants@"^0.0.7" from @bennytestui1/styles@0.0.8
-39 error npm WARN packages/styles
-39 error npm WARN   @bennytestui1/styles@0.0.4
-39 error npm WARN   node_modules/@bennytestui1/styles
-39 error npm ERR! code ETARGET
-39 error npm ERR! notarget No matching version found for @bennytestui1/constants@^0.0.7.
-39 error npm ERR! notarget In most cases you or one of your dependencies are requesting
-39 error npm ERR! notarget a package version that doesn't exist.
+39 error npm ERR! code EUNSUPPORTEDPROTOCOL
+39 error npm ERR! Unsupported URL Type "workspace:": workspace:*
 39 error
 39 error npm ERR! A complete log of this run can be found in:
-39 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_43_18_823Z-debug-0.log
+39 error npm ERR!     /Users/sgrmhdk/.npm/_logs/2023-02-25T11_53_50_678Z-debug-0.log
 39 error     at makeError (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
 39 error     at handlePromise (/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/node_modules/@lerna/child-process/node_modules/execa/index.js:118:26)
 39 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
