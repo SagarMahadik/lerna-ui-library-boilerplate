@@ -1,6 +1,7 @@
 import { styled, motion } from "@bennytestui1/styles";
+import { Button } from "./Button";
 
-export const AnimatedButton = styled(motion.button)`
+const AnimatedButton = styled(motion.button)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -16,3 +17,5 @@ export const AnimatedButton = styled(motion.button)`
 	width: 100px;
 	height: 200px;
 `;
+
+export { AnimatedButton, Button };
