@@ -1,6 +1,6 @@
 import { br_circle, fs_regular, fw_800 } from "@bennytestui1/constants";
 import styled from "styled-components";
-
+import { motion, AnimatePresence } from "./animationExports";
 interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
 	width?: string;
 	minWidth?: string;
@@ -152,7 +152,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
 	scrollBarThumbColor?: string;
 }
 
-export const Button = styled.div<ButtonProps>`
+const Button = styled.div<ButtonProps>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -167,7 +167,7 @@ export const Button = styled.div<ButtonProps>`
 	height: 200px;
 `;
 
-export const ButtonText = styled.h1`
+const ButtonText = styled.h1`
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
@@ -175,10 +175,12 @@ export const ButtonText = styled.h1`
 	font-style: italic;
 `;
 
-export const ButtonIcon = styled.div`
+const ButtonIcon = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 48px;
 	height: 48px;
 `;
+
+export { motion, AnimatePresence, Button, ButtonText, ButtonIcon, styled };

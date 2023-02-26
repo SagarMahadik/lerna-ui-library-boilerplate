@@ -1,6 +1,6 @@
 {
-	"name": "@bennytestui1/styles",
-	"version": "0.1.1",
+	"name": "@bennytestui1/components",
+	"version": "0.0.0",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"type": "module",
@@ -13,9 +13,7 @@
 		"test": "jest"
 	},
 	"peerDependencies": {
-		"@bennytestui1/constants": ">=0.0.4",
-		"styled-components": "^5.3.6",
-		"framer-motion": "^9.0.2"
+		"@bennytestui1/styles": "^0.0.0"
 	},
 	"publishConfig": {
 		"access": "public"
