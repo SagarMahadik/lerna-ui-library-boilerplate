@@ -119,7 +119,7 @@
     to-fast-properties "^2.0.0"
 
 "@bennytestui1/components@file:/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/packages/components":
-  version "0.1.3"
+  version "0.1.4"
   resolved "file:packages/components"
 
 "@bennytestui1/constants@>=0.0.4", "@bennytestui1/constants@file:/Users/sgrmhdk/Desktop/lerna-boilerplate/my-ui-library/packages/constants":
