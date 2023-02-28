@@ -9,8 +9,7 @@
 	],
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "rimraf dist && rollup --config --bundleConfigAsCjs",
-		"test": "jest"
+		"build": "rimraf dist && rollup --config --bundleConfigAsCjs"
 	},
 	"publishConfig": {
 		"access": "public"

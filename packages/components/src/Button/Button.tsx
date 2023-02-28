@@ -14,5 +14,6 @@ const Button = ({ label, onClick }: ButtonProps) => {
 	);
 };
 
-export { Button, ButtonProps };
+export { Button };
+export type { ButtonProps };
 export default Button;

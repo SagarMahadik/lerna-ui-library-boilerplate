@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render the button 1`] = `
+<div
+  class="sc-bcXHqe jlwint"
+>
+  <h1
+    class="sc-gswNZR dsEACx"
+  >
+    Click me
+  </h1>
+</div>
+`;

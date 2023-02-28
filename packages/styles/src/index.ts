@@ -183,4 +183,4 @@ const ButtonIcon = styled.div`
 	height: 48px;
 `;
 
-export { motion, AnimatePresence, Button, ButtonText, ButtonIcon, styled };
+export { Button, ButtonText, ButtonIcon };
