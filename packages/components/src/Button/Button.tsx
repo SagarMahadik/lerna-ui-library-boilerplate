@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Button as StyledButton, ButtonText } from "@bennytestui1/styles";
 
 interface ButtonProps {

@@ -6,13 +6,5 @@
 		"allowSyntheticDefaultImports": true
 	},
 	"include": ["src/**/*"],
-	"exclude": ["node_modules", "**/*.spec.ts"],
-	"references": [
-		{
-			"path": "./tsconfig.lib.json"
-		},
-		{
-			"path": "./tsconfig.spec.json"
-		}
-	]
+	"exclude": ["node_modules", "**/*.spec.ts"]
 }

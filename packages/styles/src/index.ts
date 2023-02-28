@@ -1,4 +1,4 @@
-import { br_circle, fs_regular, fw_800 } from "@bennytestui1/constants";
+import { fs_regular, fw_800, br_large } from "@bennytestui1/constants";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "./animationExports";
 interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -158,7 +158,7 @@ const Button = styled.div<ButtonProps>`
 	justify-content: center;
 	padding: 8px 16px;
 	background-color: #000;
-	border-radius: ${({ borderRadius }) => borderRadius || br_circle}};
+	border-radius: ${({ borderRadius }) => borderRadius || br_large}};
 	color: #fff;
 	font-size: ${({ fontSize }) => fontSize || fs_regular};
 	font-weight: ${({ fontWeight }) => fontWeight || fw_800};
@@ -183,4 +183,4 @@ const ButtonIcon = styled.div`
 	height: 48px;
 `;
 
-export { Button, ButtonText, ButtonIcon };
+export { Button, ButtonText, ButtonIcon, styled, motion, AnimatePresence };
