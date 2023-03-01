@@ -1,6 +1,6 @@
 {
 	"name": "@bennytestui1/components",
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"type": "module",
@@ -19,7 +19,7 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@bennytestui1/styles": "^0.1.9",
+		"@bennytestui1/styles": "^0.1.10",
 		"@testing-library/jest-dom": "^5.16.5"
 	}
 }
