@@ -4,6 +4,14 @@ import createStyledComponentsTransformer from "typescript-plugin-styled-componen
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
+import { babel } from "@rollup/plugin-babel";
+
+const customBabelConfig = {
+	babelHelpers: "bundled",
+	plugins: [
+		["babel-plugin-styled-components", { displayName: true, ssr: true }],
+	],
+};
 
 const externalDependencies = [
 	"react",
@@ -12,11 +20,6 @@ const externalDependencies = [
 	"react/jsx-runtime",
 	"framer-motion",
 ];
-
-const styledComponentsTransformer = createStyledComponentsTransformer({
-	displayName: true,
-	ssr: true,
-});
 
 export default {
 	input: "src/index.ts",
@@ -35,9 +38,9 @@ export default {
 		commonjs(),
 		typescript({
 			tsconfig: "tsconfig.json",
-			transformers: [() => ({ before: [styledComponentsTransformer] })],
 			exclude: ["src/**/*.spec.tsx", "src/**/*.stories.tsx"],
 		}),
+		babel(customBabelConfig),
 		terser(),
 	],
 };
