@@ -1,5 +1,6 @@
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
+import createStyledComponentsTransformer from "typescript-plugin-styled-components";
 import pkg from "./package.json";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import terser from "@rollup/plugin-terser";
@@ -12,6 +13,11 @@ const externalDependencies = [
 	"react/jsx-runtime",
 	"framer-motion",
 ];
+
+const styledComponentsTransformer = createStyledComponentsTransformer({
+	displayName: true,
+	ssr: true,
+});
 
 export default {
 	input: "src/index.ts",
