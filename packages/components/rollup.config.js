@@ -21,6 +21,7 @@ export default {
 			entryFileNames: "[name].js",
 			format: "esm",
 			exports: "named",
+			sourcemap: true,
 		},
 	],
 	external: externalDependencies,
@@ -31,6 +32,7 @@ export default {
 		typescript({
 			tsconfig: "tsconfig.json",
 			transformers: [() => ({ before: [styledComponentsTransformer] })],
+			exclude: ["src/**/*.spec.tsx", "src/**/*.stories.tsx"],
 		}),
 		terser(),
 	],
