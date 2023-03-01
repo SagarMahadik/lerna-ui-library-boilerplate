@@ -21,7 +21,6 @@ export default {
 			entryFileNames: "[name].js",
 			format: "esm",
 			exports: "named",
-			sourcemap: true,
 		},
 	],
 	external: externalDependencies,
