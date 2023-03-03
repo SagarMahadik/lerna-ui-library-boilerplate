@@ -159,6 +159,7 @@ const Button = styled.div<ButtonProps>`
 	justify-content: center;
 	padding: 8px 16px;
 	background-color: lightblue;
+	border: 1px solid lighpink;
 	border-radius: ${({ borderRadius }) => borderRadius || br_large}};
 	color: #fff;
 	font-size: ${({ fontSize }) => fontSize || fs_regular};
