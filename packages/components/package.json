@@ -21,5 +21,6 @@
 	"devDependencies": {
 		"@bennytestui1/styles": "^0.1.11",
 		"@testing-library/jest-dom": "^5.16.5"
-	}
+	},
+	"gitHead": "c1098ee348528265075677b233ca6d2cbc1cc509"
 }

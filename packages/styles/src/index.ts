@@ -158,7 +158,7 @@ const Button = styled.div<ButtonProps>`
 	align-items: center;
 	justify-content: center;
 	padding: 8px 16px;
-	background-color: #000;
+	background-color: lightblue;
 	border-radius: ${({ borderRadius }) => borderRadius || br_large}};
 	color: #fff;
 	font-size: ${({ fontSize }) => fontSize || fs_regular};
