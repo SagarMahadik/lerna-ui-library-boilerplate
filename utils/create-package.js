@@ -28,7 +28,7 @@ const files = [
 	{
 		name: `package.json`,
 		content: `{
-	"name": "@bennytestui1/${packageName}",
+	"name": "@bennyui/${packageName}",
 	"version": "0.0.0",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -50,31 +50,51 @@ const files = [
 		name: "tsconfig.json",
 		content: `{
 	"compilerOptions": {
+		"jsx": "react",
+		"allowJs": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "es5",
+		"lib": [
+			"dom",
+			"es2015",
+			"es2016",
+			"es2017",
+			"es2018",
+			"es2019",
+			"es2020",
+			"es2021"
+		],
 		"declaration": true,
 		"declarationDir": "./dist",
-		"strict": true,
-		"allowSyntheticDefaultImports": true,
-		"sourceMap": true,
-		"noUnusedParameters": true,
-		"strictNullChecks": true,
-		"moduleResolution": "node",
-		"noImplicitAny": true,
 		"outDir": "./dist",
-		"target": "es5",
-		"jsx": "react"
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"strict": true
 	},
 	"include": ["src/**/*"],
-	"exclude": ["node_modules"]
-}`,
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}
+`,
 	},
 	{
 		name: "rollup.config.js",
 		content: `import commonjs from "@rollup/plugin-commonjs";
-				import typescript from "@rollup/plugin-typescript";
-import pkg from "./package.json";
+import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
+import { babel } from "@rollup/plugin-babel";
+
+const customBabelConfig = {
+	babelHelpers: "bundled",
+	plugins: [
+		["babel-plugin-styled-components", { displayName: true, ssr: true }],
+	],
+};
 
 const externalDependencies = [
 	"react",
@@ -101,12 +121,13 @@ export default {
 		commonjs(),
 		typescript({
 			tsconfig: "tsconfig.json",
-			transformers: [() => ({ before: [styledComponentsTransformer] })],
+			exclude: ["src/**/*.spec.tsx", "src/**/*.stories.tsx"],
 		}),
+		babel(customBabelConfig),
 		terser(),
 	],
-	
-};`,
+};
+`,
 	},
 ];
 
