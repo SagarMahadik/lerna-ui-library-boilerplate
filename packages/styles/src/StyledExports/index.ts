@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const namedStyled: typeof styled = styled;
+const namedStyled: typeof styled = styled;
+
+export { namedStyled as default };
