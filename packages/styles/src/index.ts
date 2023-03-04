@@ -1,7 +1,7 @@
 import { fs_regular, fw_800, br_large } from "@bennytestui1/constants";
 
 import { motion, AnimatePresence } from "./animationExports";
-import styled from "./styledExports";
+import { styled } from "styled-components";
 interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
 	width?: string;
 	minWidth?: string;
