@@ -1,9 +1,7 @@
 import { fs_regular, fw_800, br_large } from "@bennytestui1/constants";
 
 import { motion, AnimatePresence } from "./animationExports";
-import _styled from "styled-components";
-//@ts-ignore
-const styled = _styled.default || _styled;
+import styled from "./styledExports";
 interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
 	width?: string;
 	minWidth?: string;
@@ -155,7 +153,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLDivElement> {
 	scrollBarThumbColor?: string;
 }
 
-const Button = styled.default.div<ButtonProps>`
+const Button = styled.div<ButtonProps>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
